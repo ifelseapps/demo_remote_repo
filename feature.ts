@@ -1,2 +1,6 @@
+import { log } from './index';
+
 const sayHello = (greeter: string) => (name: string) =>
-    console.log(`${greeter}, ${name}!`);
+    `${greeter}, ${name}!`
+
+log(sayHello('Shalom')('Moshe'));
